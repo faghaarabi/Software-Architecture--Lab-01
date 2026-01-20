@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lab 1</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <h1 id="title"></h1>
+    <h3 id="name"></h3>
+
+    <div class="nav">
+      <a id="linkWriter" href="writer.html"></a>
+      <a id="linkReader" href="reader.html"></a>
+    </div>
+  </div>
+
+  <script src="lang/messeges/en/user.js"></script>
+
+  <script>
+    document.getElementById("title").textContent = USER_MSG.APP_TITLE;
+    document.getElementById("name").textContent = USER_MSG.STUDENT_NAME;
+    document.getElementById("linkWriter").textContent = USER_MSG.BTN_WRITER;
+    document.getElementById("linkReader").textContent = USER_MSG.BTN_READER;
+  </script>
+</body>
+</html>
